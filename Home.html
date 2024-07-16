@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed-Community</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #333; /* Dark background */
+            margin: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .button-container {
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .button {
+            display: block;
+            margin: 20px auto; /* Increased margin for more spacing */
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            width: 80%; /* Make buttons responsive */
+            max-width: 300px; /* Limit max width */
+        }
+        .lavoro {
+            background-color: #35a8e0;
+        }
+        .tempo-libero {
+            background-color: #068475;
+        }
+        .vita {
+            background-color: #ce242d;
+        }
+        .button:hover {
+            opacity: 0.8;
+        }
+        @media (min-width: 768px) {
+            .button {
+                font-size: 24px;
+                padding: 20px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="Lavoro.html" class="button lavoro">LAVORO</a>
+        <a href="Tempo-libero.html" class="button tempo-libero">TEMPO LIBERO</a>
+        <a href="Vita.html" class="button vita">VITA</a>
+    </div>
+</body>
+</html>

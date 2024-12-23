@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Sound</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:active {
+            background-color: #39843c;
+        }
+    </style>
+</head>
+<body>
+    <button id="playSound">Tra Boschi e Prati...</button>
+    <audio id="sound" src="./Tra-Boschi-e-Prati.mp3"></audio>
+
+    <script>
+        document.getElementById('playSound').addEventListener('click', () => {
+            const sound = document.getElementById('sound');
+            sound.currentTime = 0; // Reset the sound if already playing
+            sound.play();
+        });
+    </script>
+</body>
+</html>
